@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
+
+
+
+/*este es un reset css a html*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html body {
+    height: 100%;
+}
+
+body {
+    font-family: "National Park", sans-serif;
+    font-size: 1.2cm;
+    min-height: 100%;
+}
+
+.contenedor > * {
+    box-shadow: -1px 1px 0px rgba(0, 0 , 0, 0.75);
+    text-align: center;
+    padding: 50px;
+    border: 10px;
+    border-radius: 4px;
+    border-color: red;
+}
+
+
+.header {
+    grid-area: header;
+    background-color: aqua;
+}
+.nav {
+    rid-area: nav;
+    background-color: lightcoral;
+}
+.asside {
+    rid-area: asside;
+    background-color: blue;
+}
+.article {
+    rid-area: article;
+    background-color: crimson;
+}
+.footer {
+    rid-area: footer;
+    background-color: lime;
+}
+
+.contenedor {
+    display: grid;
+    gap: 10px;
+    grid grid-template: 
+        "HEADER" 100px
+        "NAV" 100px
+        "ARTICLE" auto
+        "ASSIDE" 100px
+        "FOOTER" 100px;
+
+}
+
