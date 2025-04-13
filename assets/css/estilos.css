@@ -19,11 +19,43 @@ body {
     min-height: 100%;
 }
 
-.contenedor {
+.contenedor > * {
+    box-shadow: -1px 1px 0px rgba(0, 0, 0, 0.75);
     text-align: center;
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 
+.header {
+    grid-area: header;
+    background-color: aquamarine;
+}
 
+.navbar {
+    grid-area: navbar;
+    background-color: yellowgreen;
+}
+.aside {
+    grid-area: aside;
+    background-color: purple;
+}
+.article {
+    grid-area: article;
+    background-color: red;
+}
+.footer {
+    grid-area: footer;
+    background-color:blue;
+}
+
+.contenedor {
+     display: grid;
+     gap: 10px;
+     grid-template:
+         "header" 100px
+         "navbar" 50px
+         "article" auto
+         "aside" 100px
+         "footer" 100px;
+}
