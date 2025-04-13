@@ -54,8 +54,21 @@ body {
      gap: 10px;
      grid-template:
          "header" 100px
-         "navbar" 50px
+         "navbar" 100px
          "article" auto
          "aside" 100px
          "footer" 100px;
+
+}
+
+
+@media (min-width:600px){
+    .contenedor{
+        grid-template:
+         "header header" 100px
+         "navbar navbar" 100px
+         "aside article" auto
+         "footer footer" 100px;
+         
+    }
 }
